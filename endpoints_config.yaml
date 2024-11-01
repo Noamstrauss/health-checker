@@ -1,0 +1,41 @@
+- name: fetch index page
+  headers:
+      user-agent: fetch-synthetic-monitor
+  method: GET
+  url: https://fetch.com
+
+- name: fetch some fake post endpoint
+  body: '{"foo":"bar"}'
+  headers:
+    content-type: application/json
+    user-agent: fetch-synthetic-monitor
+  method: POST
+  url: https://fetch.com/some/post/endpoint
+
+- name: fetch rewards index page
+  url: https://www.fetchrewards.com/
+
+- name: Google
+  headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  url: https://google.com
+
+- name: Twitter
+  headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  url: https://twitter.com
+
+- name: Instagram
+  headers:
+    user-agent: fetch-synthetic-monitor
+  method: GET
+  url: https://instagram.com
+
+- name: Facebook
+  headers:
+    content-type: application/json
+  method: GET
+  url: https://facebook.com
+
